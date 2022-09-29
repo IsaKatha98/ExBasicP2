@@ -14,7 +14,7 @@ public class Activity5 {
 	int nota1;
 	int nota2;
 	int nota3;
-	double notacal;
+	int notacal;
 	double notaexp;
 	
 	//Solicitamos los datos
@@ -26,13 +26,16 @@ public class Activity5 {
 	nota3=sc.nextInt();
 	
 	//Hacemos la media aritmética de las calificaciones (notas enteras)
-	notaexp=((double)nota1+ (double)nota2+ (double)nota3)/3;
+	notaexp=(double) (nota1+nota2+nota3)/3;
 	notacal= (nota1+nota2+nota3)/3;
 	
 	//Devuelvo el resultado
 	System.out.println("Su nota media en el boletín será: "+notacal);
-	System.out.print("Su nota media en el expediente será: "+notaexp);
+	System.out.print("Su nota media en el expediente será: "+ notaexp);
 	
+	/*Otra forma de hacerlo sería declarar una variable double "media", hacer el cálculo de la 
+	 * media=(double)(nota1+nota2+nota3)/3 para la nota del expediente
+	 * y luego imprimir la media con un (int) para la nota del boletín*/
 
 	//Cerramos el escáner
 	sc.close();
